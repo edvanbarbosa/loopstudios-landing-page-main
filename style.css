@@ -1,0 +1,44 @@
+@charset "UTF-08";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: url("images/desktop/image-hero.jpg") no-repeat; 
+    background-size: cover;
+}
+.header-container{
+   width: 80%;
+   height: 70%;
+}
+.nav-and-logo-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.nav-options{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    gap: 1em;
+}
+
+.title-container{
+    display: flex;
+    align-items: center;
+    height: 80%;
+}
+h1{
+    border: 5px solid #fff;
+}
