@@ -1,4 +1,20 @@
 @charset "UTF-08";
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+
+:root{
+
+    /*colors*/
+
+    --branco: hsl(0, 0%, 100%);
+    --preto: hsl(0, 0%, 0%);
+    --cinza-escuro: hsl(0, 0%, 55%);
+    --cinza-muito-escuro: hsl(0, 0%, 41%);
+
+    /*fonts*/
+    --font-alata: 'Alata', sans-serif;
+    --font-josefin: 'Josefin Sans', sans-serif;
+}
 
 *{
     margin: 0;
@@ -7,6 +23,7 @@
 }
 body{
     min-height: 100vh;
+    width: 100vw;
 }
 header{
     display: flex;
@@ -25,20 +42,276 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 10%;
 }
 .nav-options{
     list-style-type: none;
     display: flex;
     align-items: center;
     width: 50%;
-    gap: 1em;
+    gap: 1.5em;
+    font-family: var(--font-alata);
+    color: var(--branco);
+}
+.nav-options > li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .2em;
+    cursor: pointer;
+}
+.nav-options li::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    border-radius: 10px;
+    background: var(--branco);
+    transition: width .3s;
+}
+.nav-options li:hover::after{
+    width: 70%;
 }
 
 .title-container{
     display: flex;
     align-items: center;
-    height: 80%;
+    height: 90%;
+    font-family: var(--font-josefin);
+    color: var(--branco);
+    font-size: 1.8em;
+    text-transform: uppercase;
+
 }
 h1{
     border: 5px solid #fff;
+    width: 50%;
+    padding: .5em;
+}
+main{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    
+}
+section{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 80%;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.about > div{
+    width: 60%;
+    height: 80%;
+}
+
+.img-about-container{
+   background-image: url('images/desktop/image-interactive.jpg');
+   background-size: cover;
+    
+}
+
+.text-about-container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--branco);
+    margin-bottom: -25%;
+    margin-left: -25%;
+    padding: 5em;
+    gap: 1em;
+}
+.text-about-container h2{
+    font-family: var(--font-josefin);
+    text-transform: uppercase;
+    font-size: 2.5em;
+    width: 80%;
+}
+.text-about-container p {
+    font-family: var(--font-alata);
+    color: var(--cinza-escuro);
+    width: 80%;
+    line-height: 1.8em;
+
+}
+.creations-section{
+    flex-direction: column;
+    gap: 3em;
+    height: 150vh;
+}
+.title-section-creations{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.title-section-creations h2{
+    font-family: var(--font-josefin);
+    font-size: 2.8em;
+    text-transform: uppercase;
+}
+
+.title-section-creations button{
+    width:15%;
+    height: 40px;
+    font-family: var(--font-alata);
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    background-color: transparent;
+    border: 3px solid var(--preto);
+    font-size: 1.05em;
+    color: var(--preto);
+    transition: .3s;
+}
+.title-section-creations button:hover{
+    background-color: var(--preto);
+    color: var(--branco);
+   
+}
+.creations{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    height: 90%;
+    gap: 2em;
+    padding-bottom: 5em;
+}
+
+.creations > div{
+    display: flex;
+    padding: 1em;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2em;
+    background-size: cover;
+    background-position: center center;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    color: var(--branco);
+}
+.creations > div:hover{
+    opacity: .5;
+}
+.creations > div h3{
+    font-family: var(--font-josefin);
+    font-size: 2em;
+    width: 80%;
+    text-transform: uppercase;
+ 
+    margin-bottom: 1em;
+
+}
+
+.deep-earth{
+    background-image: url('images/desktop/image-deep-earth.jpg');
+}
+.night-arcade{
+    background-image: url('images/desktop/image-night-arcade.jpg');
+}
+.soccer-team{
+    background-image: url('images/desktop/image-soccer-team.jpg');
+}
+.the-grid{
+    background-image: url('images/desktop/image-grid.jpg');
+}
+.from-up-above{
+    background-image: url('images/desktop/image-from-above.jpg');
+}
+.pocket{
+    background-image: url('images/desktop/image-pocket-borealis.jpg');
+}
+.curiosity{
+    background-image: url('images/desktop/image-curiosity.jpg');
+}
+.make-it-fisheye{
+    background-image: url('images/desktop/image-fisheye.jpg');
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    padding: 2em 5em;
+    background-color: var(--preto);
+    color: var(--branco);
+}
+.content-footer-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.logo-footer{
+    width: 30%;
+}
+.menu-footer{
+    list-style-type: none;
+    display: flex;
+    gap: 2em;
+    font-family: var(--font-alata);
+    font-size: .9em;
+    
+}
+.menu-footer li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .3em;
+    cursor: pointer;
+
+}
+.menu-footer li::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    border-radius: 10px;
+    background: var(--branco);
+    transition: width .3s;
+}
+.menu-footer li:hover::after{
+    width: 70%;
+}
+.content-footer-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1em;
+}
+.social-logos{
+    display: flex;
+    gap: 1.5em;
+    list-style-type: none;
+}
+.social-logos li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .3em;
+    cursor: pointer;
+
+}
+.social-logos li::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    border-radius: 10px;
+    background: var(--branco);
+    transition: width .3s;
+}
+.social-logos li:hover::after{
+    width: 100%;
+}
+.copyright{
+    font-family: var(--font-alata);
+    font-size: .9em;
+    color: var(--cinza-muito-escuro);
 }
