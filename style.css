@@ -315,3 +315,21 @@ footer{
     font-size: .9em;
     color: var(--cinza-muito-escuro);
 }
+@media screen and (max-width: 1170px ){
+    .title-container{
+        font-size: 1.5em;
+    }
+    .about > div{
+        width: 80%;
+        height: 60%;
+    }
+    
+}
+@media screen and (max-width: 950px ){
+    .text-about-container h2{
+        font-size: 1.8em;
+    }
+}
+@media screen and (max-width: 90px ){
+    
+}
