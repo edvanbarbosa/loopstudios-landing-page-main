@@ -105,6 +105,12 @@ header{
 nav.menu{
     height: 70%;
 }
+.burguer{
+    cursor: pointer;
+}
+.icon-close{
+    cursor: pointer;
+}
 nav.menu > ul{
     display: flex;
     flex-direction: column;
