@@ -387,7 +387,7 @@ footer{
         font-size: 1.8em;
     }
 }
-@media screen and (max-width: 900px ){
+@media screen and (max-width: 900px){
     .menu-icons{
         display: flex;
         justify-content: center;
