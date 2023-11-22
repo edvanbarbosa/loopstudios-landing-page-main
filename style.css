@@ -281,6 +281,9 @@ section{
 .make-it-fisheye{
     background-image: url('images/desktop/image-fisheye.jpg');
 }
+.button-mobile-container{
+    display: none;
+}
 
 footer{
     display: flex;
@@ -389,9 +392,162 @@ footer{
     }
     .title-container{
         width: 100%;
-        font-size: 1.2em;
+        font-size: 1em;
+        font-weight: 300;
     }
     h1{
         width: 100%;
+        padding: 1em;
     }
+    section{
+        width: 90%;
+    }
+    .about{
+        flex-direction: column;
+        padding: 2em 1em;
+        gap: 1em;
+    }
+    .about > div{
+        width: 100%;
+        height: 50%;
+    }
+    .img-about-container{
+        background-image: url('images/mobile/image-interactive.jpg');
+        background-position: center center;
+        background-size: cover;
+         
+     }
+     .text-about-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        background-color: var(--branco);
+        margin-bottom: 0;
+        margin-left: 0;
+        padding: 0;
+        gap: 1em;
+    }
+    .creations-section{
+        flex-direction: column;
+        gap: 3em;
+        height: auto;
+    }
+    .title-section-creations{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    .title-section-creations h2{
+        font-family: var(--font-josefin);
+        font-size: 1.8em;
+        text-transform: uppercase;
+    }
+    .title-section-creations button{
+        display: none;
+    }
+    .creations{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    .creations > div{
+        display: flex;
+        padding: 1em;
+        height: 8em;
+        margin-bottom: 0em;
+     
+    }
+    .creations > div h3{
+        font-family: var(--font-josefin);
+        font-size: 2em;
+        width: 80%;
+        text-transform: uppercase;
+        margin-bottom: 0em;
+        font-weight: 300;
+    
+    }
+    .deep-earth{
+        background-image: url('images/mobile/image-deep-earth.jpg');
+    }
+    .night-arcade{
+        background-image: url('images/mobile/image-night-arcade.jpg');
+    }
+    .soccer-team{
+        background-image: url('images/mobile/image-soccer-team.jpg');
+    }
+    .the-grid{
+        background-image: url('images/mobile/image-grid.jpg');
+    }
+    .from-up-above{
+        background-image: url('images/mobile/image-from-above.jpg');
+    }
+    .pocket{
+        background-image: url('images/mobile/image-pocket-borealis.jpg');
+    }
+    .curiosity{
+        background-image: url('images/mobile/image-curiosity.jpg');
+    }
+    .make-it-fisheye{
+        background-image: url('images/mobile/image-fisheye.jpg');
+    }
+    .button-mobile-container{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 2em;
+    }
+    .button-see-mobile{
+        width:80%;
+        height: 60px;
+        font-family: var(--font-alata);
+        text-transform: uppercase;
+        letter-spacing: .3em;
+        background-color: transparent;
+        border: 3px solid var(--preto);
+        font-size: 1.2em;
+        color: var(--preto);
+        transition: .3s;
+    }
+    .button-see-mobile:hover{
+        background-color: var(--preto);
+        color: var(--branco);
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        height: 70vh;
+        padding: 2em;
+     
+    }
+    .content-footer-left{
+   
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+    .logo-footer{
+        width: 100%;
+    }
+    .menu-footer{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        font-family: var(--font-alata);
+        font-size: 1.2em;
+        
+    }
+    .content-footer-right{
+
+        align-items:center;
+     
+    }
+    .copyright{
+        width: 100%;
+       text-align: center;
+    }
+    
 }
