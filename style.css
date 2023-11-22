@@ -23,7 +23,6 @@
 }
 body{
     min-height: 100vh;
-    width: 100vw;
 }
 header{
     display: flex;
@@ -72,7 +71,56 @@ header{
 .nav-options li:hover::after{
     width: 70%;
 }
-
+.menu-icons{
+    display: none;
+}
+.menu-mobile{
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding: 1em 2em;
+}
+.menu-mobile .top-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+ 
+}
+.menu-mobile .top-menu ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+nav.menu{
+    height: 70%;
+}
+nav.menu > ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 1.2em;
+}
+nav.menu li{
+    font-size: 1.5em;
+    font-family: var(--font-josefin);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+nav.menu li:hover{
+    color: #9E2891;
+}
 .title-container{
     display: flex;
     align-items: center;
@@ -330,6 +378,20 @@ footer{
         font-size: 1.8em;
     }
 }
-@media screen and (max-width: 90px ){
-    
+@media screen and (max-width: 900px ){
+    .menu-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-options{
+        display: none;
+    }
+    .title-container{
+        width: 100%;
+        font-size: 1.2em;
+    }
+    h1{
+        width: 100%;
+    }
 }
